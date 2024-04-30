@@ -3,7 +3,7 @@
 This repository contains exercises from the C# Course Challenge to practice the fundamentals of C# programming language. Each project folder corresponds to an exercise. Here's a brief description of the functionality of each exercise:
 
 1. **PersonalizedGreeting**
-   - A program where the user needs to enter a name, and a personalized welcome message with their name is displayed: "Hello, Daniel! Welcome!".
+   - A program where the user needs to enter a name, and a personalized welcome message with their name is displayed: "Olá, Daniel! Seja muito bem-vindo!".
 
 2. **NameConcatenation**
    - A program that concatenates a first name and a last name entered by the user, and at the end, it displays the full name.
