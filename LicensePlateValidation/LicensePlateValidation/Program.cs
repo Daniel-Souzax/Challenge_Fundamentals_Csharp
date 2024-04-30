@@ -1,31 +1,28 @@
-﻿namespace LicensePlateValidation;
+﻿using System.Text.RegularExpressions;
+
+namespace LicensePlateValidation;
 
 class Program
 {
     static void Main()
     {
         
-        Console.WriteLine("Digite a placa do seu carro");
+        Console.WriteLine("Enter the license plate");
         string licensePlate = Console.ReadLine();
-        Console.WriteLine(licensePlate);
 
         if (licensePlate.Length != 7) {
-            Console.WriteLine("False");
+            Console.WriteLine("false");
             return;
         }
 
         string numbers = licensePlate.Substring(3);
-        long number1 = 0;
         string letters = licensePlate.Substring(0,3);
 
-        /*
-        if (letters == "letras" && numbers == "numeros") Console.WriteLine("true");
+        bool validationNumbers = Regex.IsMatch(numbers, "^[0-9]+$");
+        bool validationLetters = Regex.IsMatch(letters, "^[a-zA-Z]+$");
+
+        if (validationNumbers && validationLetters) Console.WriteLine("True");
         else Console.WriteLine("False");
-        
-        */
-
-
-
 
     }
 }
